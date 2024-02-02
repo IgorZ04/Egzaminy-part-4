@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Galeria miejsc ciekawych</h2>
+
+    </header>
+
+    <main>
+
+        <img id="main_img" src="./lanzarotte.jpg" alt="galeria">
+
+    </main>
+
+    <section>
+
+        <div id="sec_left">
+
+            <h3>Przeglądaj zdjęcia</h3>
+
+            <img src="./lanzarotte.jpg" alt="lanzarotte.jpg" onclick="changeImg(1)">
+            <img src="./pekin.jpg" alt="pekin.jpg" onclick="changeImg(2)">
+            <img src="./serengeti.jpg" alt="serengeti.jpg" onclick="changeImg(3)">
+            <img src="./wenecja.jpg" alt="wenecja.jpg" onclick="changeImg(4)">
+            <img src="./tajlandia.jpg" alt="tajlandia.jpg" onclick="changeImg(5)">
+
+        </div>
+
+        <div id="sec_right">
+
+            <h3>Obrazy w naszej galerii</h3>
+            <table>
+
+                <tr>
+                    <td>Europa</td>
+                    <td>Azja</td>
+                    <td>Afryka</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+
+            </table>
+
+            <p>Polub nas <img id="img1" src="./icon-off.png" alt="" onclick="changeImg2()"></p>
+
+            <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        Autor: 00000000000
+
+    </footer>
+
+    <script>
+
+        function changeImg(a) {
+
+            const image = document.getElementById('main_img');
+
+            if (a == 1) {
+                image.src = "./lanzarotte.jpg";
+
+            }
+            else if (a == 2) {
+
+                image.src = "./pekin.jpg";
+
+            }
+            else if (a == 3) {
+
+                image.src = "./serengeti.jpg";
+
+            }
+            else if (a == 4) {
+
+                image.src = "./wenecja.jpg";
+
+            }
+            else if (a == 5) {
+
+                image.src = "./tajlandia.jpg";
+
+            }
+            
+        }
+
+        let b = 1;
+
+        function changeImg2(){
+
+            const image2 = document.getElementById('img1');
+
+            if(b == 1){
+
+                b = 2
+                image2.src = "././icon-on.png"
+
+            }else{
+
+                b = 1
+                image2.src = "././icon-off.png"
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

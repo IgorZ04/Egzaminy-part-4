@@ -1,0 +1,7 @@
+kw1:CREATE TABLE `psy`.`uzytkownicy` (`id` INT NOT NULL AUTO_INCREMENT , `login` VARCHAR(50) NOT NULL , `haslo` VARCHAR(50) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB; 
+
+kw2:CREATE USER 'Grzegarz'@'localhost' IDENTIFIED BY 'g';
+
+kw3:SELECT `login` FROM `uzytkownicy`;
+
+kw4:SELECT `id`, `login` FROM `uzytkownicy` WHERE `haslo` LIKE "4%";

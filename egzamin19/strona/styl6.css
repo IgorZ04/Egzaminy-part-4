@@ -1,0 +1,109 @@
+*{
+
+    font-family: Georgia;
+
+}
+
+#sec_left{
+
+    float: left;
+    background-color: maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+
+}
+
+#sec_right{
+
+    background-color: Maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+    overflow-y: auto;
+    overflow-x: auto;
+
+}
+
+#sec_right > img{
+
+    float: left;
+
+}
+
+
+#sec_right > ul{
+
+    float: left;
+
+}
+
+#sec_right > p{
+
+    clear: both;
+
+}
+
+p{
+
+    padding: 10px;
+
+}
+
+img{
+
+    padding: 10px;
+    border: solid 1px white;
+    
+
+}
+
+/* #sec_right > section{
+
+    display: flex;
+    flex-flow: row;
+
+}
+
+#sec_right{
+
+    display: flex;
+    flex-flow: column;
+
+} */
+
+footer{
+
+    background-color: dimgray;
+    color: white;
+    
+}
+
+#b1{
+
+    background-color: indigo;
+    
+}
+
+#b2{
+
+    background-color:steelblue ;
+
+
+}
+
+#b3{
+
+    background-color: olive;
+
+}
+
+
+
+
+
+
+
+
+
+

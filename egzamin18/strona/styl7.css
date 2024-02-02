@@ -1,0 +1,69 @@
+*{
+
+    font-family: Helvetica;
+
+}
+
+header, footer{
+
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 30px;
+    text-align: center;
+
+
+}
+
+main{
+
+    background-color: rgb(176, 196, 222);
+    padding: 50px;
+    text-align: center;
+
+}
+
+section{
+
+    display: flex;
+    flex-flow: row;
+
+}
+
+#sec_left{
+
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 80%;
+
+}
+
+#sec_right{
+
+    background-color: rgb(70, 130, 180);
+    color: white;
+    height: 300px;
+    width: 20%;
+
+}
+
+main > img{
+
+    padding: 3px;
+    border: dashed blue 1px;
+    border-radius: 10px;
+
+}
+
+#sec_left > img {
+
+    height: 40%;
+
+}
+
+#sec_left > img:hover{
+
+    border: solid white 1px;
+
+} 
+
